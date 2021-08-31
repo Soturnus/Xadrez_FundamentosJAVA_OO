@@ -13,7 +13,7 @@ public class Rook_Torre extends ChessPiece {
 	
 	@Override
 	public String toString() {
-		return "R";
+		return "T";
 	}
 
 	@Override
