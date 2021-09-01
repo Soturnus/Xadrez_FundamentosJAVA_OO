@@ -40,8 +40,12 @@ public class Program {
 					captured.add(capturedPiece);
 				}
 				if(chessMatch.getPromoted() != null) {
-					System.out.println("Escolha a peca que deseja receber na promocao (B/C/T/Q)");
-					String type = sc.nextLine();
+					System.out.println("Escolha para qual peca que deseja promover o peao (B/C/T/Q)");
+					String type = sc.nextLine().toUpperCase();
+					while (!type.equals("B") && !type.equals("C") && !type.equals("T") & !type.equals("Q")) {
+						System.out.println("Valor invalido! Escolha para qual peca que deseja promover o peao (B/C/T/Q)");
+						type = sc.nextLine().toUpperCase();
+					}
 					chessMatch.replacePromotedPiece(type);
 				}
 			}
