@@ -119,7 +119,7 @@ public class UI {
 		System.out.println("Pecas Capturadas: ");
 		System.out.print("Branco: ");
 		System.out.print(ANSI_WHITE);
-		System.out.println(Arrays.toString(white.toArray()));
+		System.out.print(Arrays.toString(white.toArray()));
 		System.out.println(ANSI_RESET);
 		System.out.print("Preto: ");
 		System.out.print(ANSI_YELLOW);
